@@ -25,7 +25,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
     <title>Dashboard</title>
     <style>
-        <style>
+        th{
+            background-color: #366ed8;
+        }
         /* Gaya untuk kotak pencarian */
         .search-container {
             margin-bottom: 20px;
@@ -90,10 +92,10 @@
                         while ($data = $table->fetch_assoc()) {
                         ?>
                         <tr>
-                            <td><?php echo $i; ?></td>
+                            <td style="font-weight: bold;"><?php echo $i; ?></td>
                             <td><?php echo $data['nama_guru']; ?></td>
                             <td>
-                                <a href="hapusGuru.php?id=<?= $data['id_guru'] ?>">hapus</a> /
+                                <a href="hapusGuru.php?id=<?= $data['id_guru'] ?>" onclick="showLink()">hapus</a> /
                                 <a href="editGuru.php?id=<?= $data['id_guru'] ?>">ganti</a>
                             </td>
                         </tr>
@@ -107,6 +109,15 @@
             </div>
         </div>
     </div>
+<script src="../script/dashboard.js"></script>
 <script src="../script/search.js"></script>
+<script>
+        function showLink(event) {
+            const userConfirmed = confirm("Apakah Anda yakin ingin melanjutkan?");
+            if (!userConfirmed) {
+                event.preventDefault(); // Batalkan tindakan jika memilih "Tidak"
+            }
+        }
+</script>
 </body>
 </html>

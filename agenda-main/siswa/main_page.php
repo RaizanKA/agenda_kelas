@@ -77,6 +77,7 @@
         }
         button {
             background-color: #007BFF;
+            width: 20%;
             color: white;
             border: none;
             padding: 10px 20px;
@@ -84,6 +85,19 @@
             border-radius: 5px;
             cursor: pointer;
             transition: background-color 0.3s ease;
+        }
+        .tombol{
+            width: 20%;
+            padding: 10px;
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .tombol:hover{
+            background-color: #2e6430;
         }
         button:hover {
             background-color: #0056b3;
@@ -206,7 +220,7 @@
                 </div>
             </div>
             <button type="submit" name="kembali">Kembali</button>
-            <button type="submit" name="Submit">Kirim</button>
+            <button type="submit" name="Submit" class="tombol">Kirim</button>
         </div>
     </div>
 </form>

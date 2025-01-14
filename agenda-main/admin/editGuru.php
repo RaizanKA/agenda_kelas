@@ -29,6 +29,7 @@ if (isset($_POST['ubah'])) {
     <link rel="stylesheet" href="../style/table.css">
     <link rel="stylesheet" href="../style/select.css">
     <link rel="stylesheet" href="../style/form1.css">
+    <link rel="stylesheet" href="../style/tombol.css">
     <title>Edit</title>
 </head>
 <body>
@@ -52,7 +53,7 @@ if (isset($_POST['ubah'])) {
             <form action="" method="post">
                 <h2>Edit data guru</h2>
                 <input type="text" name="edit" value="<?php echo $valid['nama_guru'] ; ?>">
-                <input type="submit" value="ubah" name="ubah">
+                <input type="submit" value="ubah" name="ubah" class="tombol">
             </form>
         </div>
 </div>

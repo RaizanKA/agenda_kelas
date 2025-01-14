@@ -23,16 +23,16 @@
     box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
     outline: none;
 }
-.export-btn, button {
+.export-btn{
     margin: 20px auto;
     text-align: left;
     padding: 10px 20px;
-    background-color: #4CAF50;
+    background-color: #32d83a;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
-.export-btn:hover,button:hover {
+.export-btn:hover{
     background-color: #45a049;
 }

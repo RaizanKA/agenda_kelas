@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="../style/table.css">
     <link rel="stylesheet" href="../style/select.css">
     <link rel="stylesheet" href="../style/form1.css">
+    <link rel="stylesheet" href="../style/tombol.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
     <title>Dashboard</title>
 </head>
@@ -52,7 +53,7 @@
                 <label for="inputMapel">
                     <input type="text" name="inputGuru" id="inputguru" required placeholder="Masukan nama guru">
                 </label>
-                <input type="submit" value="Tambah" name="tambah">
+                <input type="submit" value="Tambah" name="tambah" class="tombol">
             </form>
             </div>
         </div>

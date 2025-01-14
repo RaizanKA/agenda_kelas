@@ -23,6 +23,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
     <title>Dashboard</title>
     <style>
+        th{
+            background-color: #366ed8;
+        }
         .search-container {
             margin-bottom: 20px;
             text-align: left;
@@ -81,10 +84,10 @@
                         while ($data = $table-> fetch_assoc()) {
                     ?>
                     <tr>
-                        <td><?php echo $i++ ; ?></td>
+                        <td style="font-weight: bold;"><?php echo $i++ ; ?></td>
                         <td><?php echo $data['mapel'] ; ?></td>
                         <td>
-                            <a href="hapusMapel.php?id=<?= $data['id_mapel'] ?>">Hapus</a> /
+                            <a href="hapusMapel.php?id=<?= $data['id_mapel'] ?>" onclick="showLink()">Hapus</a> /
                             <a href="editMapel.php?id=<?= $data['id_mapel'] ?>">Edit</a>
                         </td>
                     <?php
@@ -120,6 +123,12 @@
                 }
 
                 rows[i].style.display = match ? '' : 'none';
+            }
+        }
+        function showLink(event) {
+            const userConfirmed = confirm("Apakah Anda yakin ingin melanjutkan?");
+            if (!userConfirmed) {
+                event.preventDefault(); // Batalkan tindakan jika memilih "Tidak"
             }
         }
     </script>

@@ -38,6 +38,11 @@ $k ="";
     <link rel="stylesheet" href="../style/select.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
     <title>Dashboard</title>
+    <style>
+        th{
+            background-color: #366ed8;
+        }
+    </style>
 </head>
 <body>
     <div class="container">

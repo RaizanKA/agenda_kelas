@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="../style/table.css">
     <link rel="stylesheet" href="../style/select.css">
     <link rel="stylesheet" href="../style/form1.css">
+    <link rel="stylesheet" href="../style/tombol.css">
     <title>Dashboard</title>
 </head>
 <body>
@@ -51,7 +52,7 @@
                 <label for="inputMapel">
                     <input type="text" name="inputMapel" id="inputMapel" required placeholder="Masukan Mapel">
                 </label>
-                <input type="submit" value="Tambah" name="tambah">
+                <input type="submit" value="Tambah" name="tambah" class="tombol">
             </form>
             </div>
         </div>
